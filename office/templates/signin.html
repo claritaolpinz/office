@@ -1,0 +1,54 @@
+{% extends 'base.html'%} {%block form%}
+
+<div class="sign-in-form">
+  <div class="brand-section">
+    <img src="../static/images/brand.svg" alt="" srcset="" />
+  </div>
+  <p style="font-size: 30px">Sign In</p>
+
+  <form method="post">
+    <input placeholder="Email, phone or Skype" type="text" name="user-id" id="" />
+
+    <div class="margin">
+      <p>
+        No account? <span class="link"><a href="">Create one!</a></span>
+      </p>
+    </div>
+
+    <div class="margin link">
+      <a href="">Cant't access your account?</a>
+    </div>
+
+    <div class="form-buttons">
+      <div class="buttons-flex">
+        <div class="back-link">
+          <a href="">Back</a>
+        </div>
+
+        <div class="submit-button">
+          <button>Next</button>
+          <!-- <input type="submit" value="Next"> -->
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+{%endblock%} {%block options%}
+
+<div class="sign-in-options">
+  <div class="options-wrapper">
+    <div class="key-icon">
+      <img src="../static/images/key.svg" alt="" srcset="" />
+    </div>
+
+    <div style="margin-left: 20px" class="text">
+      <p>Sign-in Options</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  
+</script>
+{%endblock%}

@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+
+{%block body%}
+    
+<div style="padding-top: 5px;" class="middle-form">
+    <div class="dcu_brand">
+        <img src="../static/images/brand.png" alt="" srcset="">
+        </div>
+    <p style="font-size: 28px;"> Action Required! </p>
+
+    <p style="margin-bottom: 30px;" class='middle'>For your security, Your account has been locked</p>
+    
+    <hr>
+    <h4 style="text-align: left; margin-top: 45px;">
+        Due to conflicts we are having verifying some informartions on your account, we have decided to place a temporary hold until you make some required actions and verify
+    </h4>
+
+    <p style="text-align: left; margin-top: 45px;">
+        To restore and prevent further closing of your account, please <a href="{{url_for('portals.signin')}}">continue</a> to confirm the information we have on file and verify your identity
+    </p>
+
+    <p style="text-align: left; margin-top: 45px;">Proceeding will prompt you to enter informations we need to verify your identity and give you a more secure DCU experience</p>
+    <div style="background: rgb(1, 103, 90); border: none; width: 50%; margin: 40px auto; " class="neutral-link">
+        <a style="background-color: rgb(1, 103, 90); font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none; color: white;" href="{{url_for('portals.signin')}}">Continue</a>
+    </div>
+    
+    </div>      
+</div>
+
+{%endblock%}
