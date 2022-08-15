@@ -16,7 +16,7 @@ body{
     margin-bottom: 28px;
     background-color: #fff;
     min-width: 320px;
-    min-height: 338px;
+    min-height: 280px;
     overflow: hidden;
 }
 
@@ -25,7 +25,8 @@ body{
 }
 
 .margin{
-    margin-top: 30px;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 .link a{
@@ -37,10 +38,11 @@ form input{
     box-sizing: border-box;
     width: 100%;
     padding: 6px 10px;
-        border: 0;
-        outline: 0;
-        border-bottom: 1px solid rgba(0,0,0,0.6);
-        height: 36px;
+    margin-top: -10px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+    height: 36px;
     outline: none;
     -webkit-border-radius: 0;
     background-color: transparent;
@@ -48,20 +50,20 @@ form input{
     border-left-width: 0;
     border-right-width: 0;
     padding-left: 0;
-    font-size: 18px;
+    font-size: 15.5px; 
 }
 
 
 .form-buttons{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
-    
 }
 
 .buttons-flex{
     margin-left: auto;
     display: flex;
+    align-items: center;
 }
 
 .form-buttons .back-link a{
@@ -73,7 +75,10 @@ form input{
 }
 
 .form-buttons .submit-button{
-    margin-left: 8px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-buttons .submit-button button{
@@ -84,7 +89,9 @@ form input{
     color: white;
     font-size: 16px;
     border: thin solid #00000033;
-    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sign-in-options{
@@ -140,12 +147,33 @@ form input{
 
 
 @media (max-width: 600px){
+    .sign-in-form{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px;
+    }
     .sign-in-options{
-      width: 88%;
+        box-sizing: border-box;
+        border: thin solid grey;
+        height: 42px;
+      width: 85%;
     }
     .options-wrapper{
-        border: thin solid black;
+
+        box-sizing: border-box;
         padding: 15px;
         height: 45%;
+    }
+    .form-buttons .submit-button button, .form-buttons .back-link a{
+        border-radius: 5px;
+        height: 30px;
+    }
+    .form-buttons .back-link a{
+        padding: 7px 34px 7px 34px;
+        font-size: 14px;
+    }
+    .form-buttons .submit-button button{
+        padding: 8px 34px 8px 34px;
+        font-size: 14px;
     }
 }

